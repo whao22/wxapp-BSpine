@@ -1,0 +1,10 @@
+
+<!-- other_page.wxml -->
+<view class="other-page">
+  <h1>All Saved Times:</h1>
+  <view class="time-list">
+    <block wx:for="{{ saveTimes }}" wx:key="index">
+      <view class="time-item">{{item}}</view>
+    </block>
+  </view>
+</view>

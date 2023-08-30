@@ -1,0 +1,64 @@
+
+
+.userInfo{
+  background: #fff;
+  /* background: #fafafa; */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.userInfo .my {
+  overflow: hidden;
+  width: 90%;
+  margin-left: 5%;
+}
+.userInfo .my .left {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  margin-top: 16rpx;
+}
+.userInfo .my .left ._img {
+  width: 140rpx;
+  height: 140rpx;
+  margin-bottom: 16rpx;
+  border-radius: 100%;
+}
+
+.userInfo .my .right {
+  margin-top: 60rpx;
+  display: inline-block;
+  float: right;
+  text-align: center;
+}
+
+.userInfo .my .right .toLogin {
+  height: 70rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 70rpx;
+  background: rgb(11, 128, 163);
+  color: #fefefe;
+  font-size: 32rpx;
+}
+
+.userAvatar{
+  margin: -40rpx 20rpx 0;
+}
+.userName{
+  padding: 20rpx 0;
+  font-size: 1rem;
+}
+.userName2{
+  padding: 20rpx 0;
+  font-size: 0.8rem;
+  color:#999;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}

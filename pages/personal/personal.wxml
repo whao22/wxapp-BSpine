@@ -1,0 +1,75 @@
+
+<view class='panel-m20'> 
+  <view class='userInfo'>
+    <view class="my"  bindtap="gotoProfile">
+      <view class="left">
+          <image src="{{userInfo.avatarUrl||'/images/avatar.png'}}" alt class="_img"></image>
+      </view>
+
+      <view class="right">
+          <view wx:if="{{userInfo.nickName}}" class="_h4">{{userInfo.nickName}}</view><button wx:else class="toLogin"  >添加就诊人</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='panel-m20'>
+  <i-cell-group>
+      <i-cell data-type="3" bindtap="clearCache"  title="退出登录">
+          <i-icon slot="icon" type="ziyuan" size="28" color="#1498d9" />
+      </i-cell>
+      <i-cell data-type="0" bindtap='registerLog' title="挂号记录">
+          <i-icon slot="icon" type="jilu" size="28" color="#1498d9" />
+      </i-cell>
+      <i-cell data-type="0" bindtap='registerLog' title="就诊记录">
+          <i-icon slot="icon" type="jl" size="28" color="#1498d9" />
+      </i-cell>
+
+      <i-cell data-type="0" bindtap='xlistLog' title="X线片列表">
+          <i-icon slot="icon" type="wenjianjia" size="28" color="#1498d9" />
+      </i-cell>
+      
+      <i-cell data-type="3" bindtap='registerLog' title="我的账单">
+          <i-icon slot="icon" type="wj-zd" size="28" color="#1498d9" />
+      </i-cell>
+      <i-cell data-type="3" bindtap='down' title="电子发票">
+          <i-icon slot="icon" type="fapiao" size="28" color="#1498d9" />
+      </i-cell>
+      
+  </i-cell-group>
+</view>
+
+<view class='panel-m20'>
+  <i-cell-group>
+      <i-cell title="关注医生" is-link url="../collect/collect?type=0">
+          <i-icon slot="icon" type="shoucang" size="28" color="#1498d9" />
+      </i-cell>
+      <i-cell title="问诊订单" is-link url="../collect/collect?type=0">
+          <i-icon slot="icon" type="dingdan" size="28" color="#1498d9" />
+      </i-cell>
+      
+  </i-cell-group>
+</view>
+
+<view class='panel-m20'>
+  <i-cell-group>
+      <i-cell data-type="0" bindtap='feedback' title="投诉建议">
+          <i-icon slot="icon" type="tousujianyi" size="28" color="#1498d9" />
+      </i-cell>
+      <!-- <i-cell data-type="2" bindtap='registerLog' title="门诊缴费记录">
+          <i-icon slot="icon" type="coupons" size="28" color="#1498d9" />
+      </i-cell> -->
+      <!-- <i-cell data-type="3" bindtap='registerLog' title="帮助中心">
+          <i-icon slot="icon" type="bangzhu" size="28" color="#1498d9" />
+      </i-cell> -->
+      <!-- <i-cell data-type="3" bindtap='registerLog' title="设置">
+          <i-icon slot="icon" type="task" size="28" color="#1498d9" />
+      </i-cell> -->
+      <i-cell data-type="3" bindtap='aboutMe' title="关于我们">
+          <i-icon slot="icon" type="guanyuwomen" size="28" color="#1498d9" />
+      </i-cell>
+      <!-- <i-cell data-type="3" bindtap='registerLog' title="更多">
+          <i-icon slot="icon" type="task" size="28" color="#1498d9" />
+      </i-cell> -->
+  </i-cell-group>
+</view>

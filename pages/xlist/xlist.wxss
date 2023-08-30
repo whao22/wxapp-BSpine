@@ -1,0 +1,44 @@
+/* pages/xlist/xlist.wxss */
+.upload-container {
+ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  background: rgb(253, 248, 248);
+  margin: 15px 15px
+}
+
+
+.button {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.base-button{
+  width: 100px;
+  height: 40px;
+  background-color: rgb(0, 162, 255);
+  border-radius: 10px;
+  color: white; /* 设置按钮文本颜色 */
+  font-weight: bold;
+  font-size: 16px; /* 设置按钮文本字体大小 */
+  text-align: center; /* 设置按钮文本水平居中 */
+  margin: 0 5px
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.button-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}

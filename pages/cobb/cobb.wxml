@@ -1,0 +1,29 @@
+<view class="page">
+    <view class="image-container" >
+        <view bindtap="addImage" class="add-image-view">
+            <image src="/images/add.svg" class="add-image"></image>
+        </view>
+    </view>
+
+    <view wx:for="{{history}}" class="image-container" >
+        <view bindtap="viewImage" class="image-view">
+          <!-- <cover-view style="position: absolute;"> -->
+            <!-- <cover-view class="date">时间：{{item.text}}</cover-view>
+            <cover-view class="cobb">主Cobb角：<text decode>{{space}}</text>{{item.cobb.mt}}度</cover-view>
+            <cover-view class="cls">分型：<text decode>{{bspace}}{{space}}</text>{{item.cls}}<text decode>{{bspace}}{{bspace}}{{space}}{{space}}</text></cover-view> -->
+            <cover-view class="date">时间：{{item.text}}</cover-view>
+            <cover-view class="cobb">主Cobb角：{{item.cobb.mt}}度</cover-view>
+            <cover-view class="cls">分型：{{item.cls}}</cover-view>
+            <image src="{{item.url}}" class="image"/>
+          <!-- </cover-view> -->
+        </view>
+    </view>
+
+    <!-- <view class="uploader">
+        <button bindtap="chooseImage">选择图片</button> 
+    </view>
+
+    <view class="preview">
+        <image wx:if="{{imgSrc}}" src="{{imgSrc}}" mode="aspectFit"></image>
+    </view> -->
+</view>

@@ -1,0 +1,37 @@
+<view class="page">
+    <view class="image-container">
+        <cover-image class="image0 image" src="{{images_drawed_urls[0]}}" style="border-radius: 15rpx; opacity: 1; {{width}}; {{height}}"></cover-image>
+        <cover-image class="image1 image" src="{{images_drawed_urls[1]}}" style="opacity: {{centerline? 1:0}}; {{width}}; {{height}}" disabled="{{submitted}}"></cover-image> 
+        <cover-image class="image2 image" src="{{images_drawed_urls[2]}}" style="opacity: {{ctrlpoint? 1:0}}; {{width}}; {{height}}"></cover-image> 
+        <cover-image class="image3 image" src="{{images_drawed_urls[3]}}" style="opacity: {{endplate? 1:0}}; {{width}}; {{height}}"></cover-image> 
+        <cover-image class="image4 image" src="{{images_drawed_urls[4]}}" style="opacity: {{cobb? 1:0}}; {{width}}; {{height}}"></cover-image> 
+    </view>
+
+    <view class="check-box">
+      <checkbox-group bindchange="checkboxChange">
+        <!-- <label class="checkbox">
+          <checkbox value="cb" checked="true"/>原图
+        </label> -->
+        <label class="checkbox">
+          <checkbox value="ckb1" style="margin-left: 20rpx;" disabled="{{!submitted}}" /><text decode>中心线{{space}}</text>
+        </label>
+        <label class="checkbox">
+          <checkbox value="ckb2" disabled="{{!submitted}}" /><text decode>控制点{{space}}</text>
+        </label>
+        <label class="checkbox">
+          <checkbox value="ckb3" disabled="{{!submitted}}" /><text decode>终板线{{space}}</text>
+        </label>
+        <label class="checkbox">
+          <checkbox value="ckb4" disabled="{{!submitted}}" /><text decode>Cobb角{{space}}</text>
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class="toolbox">
+        <button class="tailor" style="margin-left: -1rpx;" bindtap="tailorImage"> 裁剪 </button>
+        <button class="phase" bindtap="clickImage"> 反色 </button>
+        <button class="reset" bindtap="resetImage"> 重置 </button>
+        <button class="submit" style="margin-right: -1rpx;" bindtap="submitImage" disabled="{{submitted}}"> 确定 </button>
+    </view>
+</view>
+

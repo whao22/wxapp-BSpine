@@ -1,0 +1,11 @@
+<view class="page">
+    <view class="image-container" >
+        <view bindtap="viewImage" class="add-image-view">
+            <image src="/images/add.svg" class="add-image"></image>
+        </view>
+    </view>
+
+    <view wx:for="{{history}}" class="image-container" style="background-image: url('{{item.url}}')">
+        <text class="date">aaaa</text>
+    </view>
+</view>

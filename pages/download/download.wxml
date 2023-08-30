@@ -1,0 +1,12 @@
+<!-- <canvas id="canvas-id" style="width: 100%; height: 100%;"></canvas>
+<button bindtap="my_draw_canvas">Save as Image</button> -->
+
+<!-- Or any other UI element to trigger the function -->
+
+<canvas canvas-id="myCanvas" class="myCanvas"></canvas>
+<view id="my-canvas" class="my_canvas">
+    <view class="header my_draw_canvas">
+        <image class="headerImg my_draw_canvas" src="images/ai.jpg" data-type="image" data-url="{{order.headerImg}}"></image>
+        <text class="headerTitle my_draw_canvas" data-type="text" data-text="您的订单详情">您的订单详情</text>
+    </view>
+</view>

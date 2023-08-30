@@ -1,0 +1,29 @@
+.page{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container{
+  width: 45%;
+  /* height: 50%; */
+  justify-content: center; 
+  /* background-image: ; */
+  background-color: white;
+  margin: 20rpx 20rpx 15rpx;
+  -moz-box-shadow:2rpx 2rpx 5rpx #969696;
+  -webkit-box-shadow:2rpx 2rpx 5rpx #969696;
+  box-shadow:2rpx 2rpx 5rpx #969696;
+}
+
+.add-image-view{
+  display: flex;
+  justify-content: center;  
+}
+
+.add-image{ 
+  margin-top: 60%;
+  /* vertical-align: 50%; */
+  width: 250rpx;
+  height: 250rpx;
+  /* position: relative; */
+} 

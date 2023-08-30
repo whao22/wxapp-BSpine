@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="title">Terms of Use</view>
+  <view class="content">
+    <!-- Add your terms of use content here -->
+    <text>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non
+      euismod tellus. Duis rhoncus leo sed ligula scelerisque, at convallis
+      odio auctor. In fringilla euismod laoreet. Maecenas eu erat vel massa
+      semper sodales.
+    </text>
+    <text>
+      Quisque vel ante sit amet est fringilla rhoncus vel ut elit. Aenean at
+      euismod neque. Nulla volutpat nisi sit amet tortor ultrices venenatis.
+      Duis at turpis nec dui tincidunt tincidunt eu eu nunc. Nulla facilisi.
+      Phasellus cursus lorem eget elit bibendum, sit amet consectetur neque
+      bibendum. Nulla facilisi.
+    </text>
+    <!-- Add more content as needed -->
+  </view>
+</view>

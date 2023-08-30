@@ -1,0 +1,15 @@
+<!--pages/gallery/gallery.wxml-->
+
+<view class="gallery">
+
+  <block wx:for="{{images}}" wx:key="*this">
+    
+    <view class="image-view" bindtap="viewImage" >
+      <cover-view class="time">{{item.time}}</cover-view>
+      <image src="{{item.src}}" mode="aspectFill"></image> 
+
+    </view>
+  
+  </block>
+
+</view>

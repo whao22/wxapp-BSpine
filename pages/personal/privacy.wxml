@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="title">Privacy Policy</view>
+  <view class="content">
+    <!-- Add your privacy policy content here -->
+    <text>
+      According to legal requirements, the developer will only process the information necessary to implement the functions of the Mini Program.
+    </text>
+    <text>
+      1. To (streamline the user registration process and facilitate quick login), the developer will collect your WeChat nickname and avatar after obtaining your explicit consent.
+
+    </text>
+    <text>2. To (calculate the distance between merchants and users), the developer will collect your location information after obtaining your explicit consent.
+
+    </text>
+    <text>3. The developer collects your invoice information for (promptly requesting invoices after placing an order).
+
+    </text>
+    <text>4. The developer collects your address for (reducing the need for address input when placing an order).
+
+    </text>
+    <text>5. To (ensure the authenticity of login information), the developer will collect your phone number after obtaining your explicit consent.
+
+    </text>
+    <text>6. The developer collects your ID card number for (ensuring the authenticity of login information).
+
+    </text>
+    <text>7. To (ensure the proper functioning of the image download feature), the developer will use your photo album (write access only) after obtaining your explicit consent.
+
+    </text>
+    <text>8. The developer collects (your payment account information, such as bank cards) for (your own balance withdrawal, etc.).
+
+    </text>
+    <text>9. The developer collects (your email address) for (sending necessary important information and notifications).
+
+    </text>
+    <text>10. The developer collects (your device information) for (optimizing the Mini Program system).</text>
+        <!-- Add more content as needed -->
+  </view>
+</view>

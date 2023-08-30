@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "X光图像裁剪",
+    "disableScroll": true,
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#ffffff",
+    "usingComponents": {
+        "image-cropper": "../../third-utils/image-cropper/image-cropper"
+    }
+}

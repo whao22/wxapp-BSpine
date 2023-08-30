@@ -1,0 +1,11 @@
+<!-- feedbackPage.wxml -->
+<view class="feedback-container">
+  <text class="label">请输入您的投诉或建议：</text>
+  <textarea bindinput="onInput" class="input-1" placeholder="在此输入内容"></textarea>
+
+  <text class="label">请输入您的联系方式：</text>
+  <input bindinput="onContactInput" class="input-2" placeholder="在此输入联系方式"></input>
+
+  <button bindtap="submitFeedback" class="submit-button">提交</button>
+</view>
+

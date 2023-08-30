@@ -1,0 +1,72 @@
+.page{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container{
+  width: 44%;
+  justify-content: center; 
+  background-color: white;
+  margin: 20rpx 20rpx 10rpx;
+  -moz-box-shadow:2rpx 2rpx 5rpx #969696;
+  -webkit-box-shadow:2rpx 2rpx 5rpx #969696;
+  box-shadow:2rpx 2rpx 5rpx #969696;
+}
+
+.add-image-view{
+  display: flex;
+  justify-content: center;  
+}
+
+.add-image{ 
+  margin-top:35%;
+  width: 300rpx;
+  height: 300rpx;
+} 
+
+.image-view{
+  display: flex;
+  justify-content: center; 
+}
+
+.image {
+  width: 100%;
+  margin: 10rpx;
+  position: relative;
+  border-radius: 10rpx;
+}
+
+.date {
+  position: absolute;
+  transform: translate(0%,490%);
+  z-index: 999;
+}
+
+.cobb {
+  position: absolute;
+  transform: translate(0%, 600%);
+  z-index: 999;
+}
+
+.cls {
+  position: absolute;
+  transform: translate(0%, 710%);
+  z-index: 999;
+}
+
+view{
+  border-radius: 15rpx;
+}
+
+cover-view{
+  /* padding: 20rpx; */
+  /* transform: translate(0%, 100%);
+  z-index: 900; */
+  position: absolute;
+  padding: 10rpx;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 10rpx;
+  width: 260rpx;
+  text-align: center;
+}

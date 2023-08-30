@@ -1,0 +1,77 @@
+.avatar-wrapper {
+  padding: 0; 
+  border-radius: 8px;
+  margin-top: 20rpx;
+  background-color: white;
+ 
+}
+ 
+.profile-label{
+  float: left;
+  /* margin-left: 20rpx; */
+  height: 35px;
+  margin-top: 20rpx;
+  font-size: 14px;
+  color: #646566
+}
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+  float: right;
+  margin-right: 40rpx;
+}
+.submit{
+  margin: 0 auto;
+  margin-top: 20rpx;
+  width: 90%;
+}
+.toptext{
+  color:#f90;
+  font-size: 27rpx;
+  padding: 0 30rpx 0rpx;
+}
+
+.term{
+  margin-top: 10rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #999999;
+  position: relative;
+  padding: 0 30rpx 0rpx;
+}
+.term .fr1{
+  color: #f1ab12;
+}
+.radio1{
+  transform:scale(0.8);
+}
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+}
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #f1ab12;
+  border: none;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+.weui-cell__hd{
+  width: 53rpx;
+  display: inline-block;
+  float: left;
+}

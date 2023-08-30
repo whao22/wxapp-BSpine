@@ -1,0 +1,18 @@
+<!-- <view class="upload-container">
+    <image src="{{ imageUrl }}"  style="transform: rotate({{ imageRotation }}deg);"></image>
+</view>
+  
+  <!-- Add a view to trigger image selection -->
+ 
+    
+  <view class="main">
+  <view class="upload-container" style="height: 50%;">
+    <image src="{{ imageUrl }}"  style="transform: rotate({{ imageRotation }}deg);"></image>
+  </view>
+
+    <view class="button-area">
+    <button class="base-button" bindtap="chooseImage">上传</button>
+    <button class="base-button" bindtap="resetImage">重置</button>
+    <button class="base-button" bindtap="saveImage">保存</button>
+  </view>
+</view>

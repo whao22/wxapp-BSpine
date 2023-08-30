@@ -1,0 +1,45 @@
+<view class='toptext'>
+  <text>
+  本院采用实名就诊，请输入您的真实就诊信息进行绑定，若您在本院有多张就诊卡，请选择一个需要使用的就诊卡进行绑定。
+  </text>
+</view>
+<view  class="avatar-wrapper"> 
+<button open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+  <label class="profile-label van-field__label">照片</label>
+  <image class="avatar" src="{{avatarUrl}}"></image>
+</button> 
+</view>
+
+<van-cell-group>
+  <van-field
+    value="{{ nickName }}"
+    label="姓名"
+    placeholder="请输入姓名"
+    input-align="right"
+    type="nickname"
+    bind:change="onChangeNickname"
+    bind:blur="onBlurNickname"
+  />
+</van-cell-group>
+
+<!-- checkbox -->
+<view class="term">
+    <view>
+        <checkbox-group bindchange="checkboxChange">
+            <view class="weui-cell__hd">
+                <checkbox value="1" color="#fe0000" class="radio1" />
+            </view>
+            <view class="weui-cell__bd">我已阅读并同意
+  
+            <text class="fr1" bindtap='termsLog'>使用条款 </text>和<text class="fr1" bindtap="privacyLog" > 隐私政策 </text></view>
+            
+            <!-- <view class="submit"> -->
+            <van-button wx:if="{{acceptRule}}" type="primary" bind:click="submitUserInfo" size="large" >立即添加</van-button><van-button wx:else type="be" size="large">立即添加</van-button>
+        </checkbox-group>
+    </view>
+</view>
+
+<!-- <view class="submit">
+  <van-button type="primary" bind:click="submitUserInfo" size="large">立即添加</van-button>
+</view> -->
+

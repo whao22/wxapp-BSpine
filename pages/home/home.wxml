@@ -1,0 +1,130 @@
+<!--pages/home/home.wxml-->
+<view>
+  
+  <i-row i-class="topSearch">
+      <i-col span="21" i-class="col-class">
+        <j-searchComp />
+      </i-col>
+      <i-col span="3" i-class="col-class msgIcon">
+        <i-icon size='24' type="remind" />
+      </i-col>
+  </i-row>
+
+  <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item style="border-radius: 15rpx;">
+            <view class="swiper-item">
+            <cover-image src="{{item}}" > </cover-image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+  <view class='panel-m20h'>
+
+    <i-panel title="">
+        <view class='panel-p30' id='{{pensorShowTop}}'>
+          <i-button wx:if="{{userInfo.nickName}}" type="ghost" size="large">登录成功！就诊人：{{userInfo.nickName}}</i-button><i-button wx:else>初次使用，请添加就诊人信息</i-button>
+        </view>
+        <view class='personInfo'  id='{{pensorShowBottom}}'>
+            <view class="personInfoTop" >
+              <view>{{pensorName}}</view>
+              <view><j-changeMan/></view>
+              <view class='clearFloat'></view>
+              <view class='seeCard'>就诊卡：{{pensorNumber}}</view>
+            </view>
+            <view class='personInfoBottom'>
+              <view data-type="0" bindtap='registerLog'>挂号记录</view>
+              <view data-type="1" bindtap='registerLog'>门诊缴费记录</view>
+              <view bindtap="EWM">就诊码</view>
+            </view>
+        </view>
+    </i-panel>
+    <i-modal title="就诊码" class="erweimaWrapper" visible="{{ visible1 }}" actions="{{ actions4 }}" action-mode="{{ vertical }}"   bind:click="handleClose1">
+      <image class="erweima" src="http://qr.liantu.com/api.php?text={{pensorNumber}}" />
+    </i-modal>
+</view>
+ <view class='panel-m20h'>
+    <i-panel title="快速办理" >
+        <view class='panel-p10'>
+          <i-cell-group>
+              <i-cell title="预约挂号" label="综合医院/专科医院" is-link url="../department/department?type=0">
+                <i-icon slot="icon" type="guahao" size='36' color="#1498d9" />
+              </i-cell>
+          </i-cell-group>
+          <i-cell-group>
+              <i-cell title="门诊服务" label="检查预约/特药审批" is-link url="../notPayList/notPayList">
+                <i-icon slot="icon" type="menzhen" size='36' color="#1498d9" />
+              </i-cell>
+          </i-cell-group>
+          <i-cell-group>
+              <i-cell title="住院服务" label="日清明细/病案复印" is-link url="../inHS/inHS">
+                <i-icon slot="icon" type="jizhenzhuyuan" size='36' color="#1498d9" />
+              </i-cell>
+          </i-cell-group>
+        </view>
+    </i-panel>
+
+    <i-panel title="常用功能">
+        <view class='panel-p10'>
+          <i-grid>
+              <!-- <i-grid-item bindtap="personList">
+                  <i-grid-icon>
+                      <image src="../../images/addMan.png" />
+                  </i-grid-icon>
+                  <i-grid-label>添加就诊人</i-grid-label>
+              </i-grid-item> -->
+              <i-grid-item bindtap="report">
+                  <i-grid-icon>
+                      <image src="../../images/talk.png" />
+                  </i-grid-icon>
+                  <i-grid-label>报告查询</i-grid-label>
+              </i-grid-item>
+              <i-grid-item bindtap="goDayLog">
+                  <i-grid-icon>
+                      <image src="../../images/bill.png" />
+                  </i-grid-icon>
+                  <i-grid-label>住院清单</i-grid-label>
+              </i-grid-item>
+              <i-grid-item bindtap="gotoDeposit">
+                  <i-grid-icon>
+                      <image src="../../images/pay.png" />
+                  </i-grid-icon>
+                  <i-grid-label>住院缴费</i-grid-label>
+              </i-grid-item>
+          </i-grid>
+          <i-grid>
+              <i-grid-item bindtap="residentList">
+                  <i-grid-icon>
+                      <image src="../../images/inHos.png" />
+                  </i-grid-icon>
+                  <i-grid-label>住院人信息</i-grid-label>
+              </i-grid-item>
+              <i-grid-item  bindtap="goCobbEst">
+                  <i-grid-icon>
+                      <image src="../../images/phone.png" />
+                  </i-grid-icon>
+                  <i-grid-label>脊柱侧弯</i-grid-label>
+              </i-grid-item>
+              <i-grid-item data-type="0" bindtap='switchdepartmentinfo'>
+                  <i-grid-icon>
+                      <image src="../../images/log.png" />
+                  </i-grid-icon>
+                  <i-grid-label>科室介绍</i-grid-label>
+              </i-grid-item>
+              <!-- <i-grid-item>
+                  <i-grid-icon>
+                      <image src="../../images/all.png" />
+                  </i-grid-icon>
+                  <i-grid-label>全部</i-grid-label>
+              </i-grid-item> -->
+          </i-grid>
+        </view>
+    </i-panel>
+  </view>
+  
+  <!-- <j-footbar /> -->
+</view>

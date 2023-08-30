@@ -1,0 +1,47 @@
+/**app.wxss**/
+page{
+  background: #e2e2e2;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+.panel-m20{
+  margin: 20rpx;
+
+}
+.panel-m20h{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+ 
+  /* display: flex; */
+  /* border-radius: 150rpx； */
+}
+
+.panel-p15{
+  padding: 30rpx;
+}
+.panel-p5{
+  padding: 10rpx;
+}
+
+.border-b{
+  border-bottom: solid 1px #e2e2e2;
+}
+.flexRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
+.text{
+  margin: 0rpx 15rpx;
+}
+view{
+  border-radius: 15rpx;
+}
